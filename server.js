@@ -9,7 +9,7 @@ var express   = require('express'),
 
 
 //establish connection to mongo database
-mongoose.connect('mongodb://localhost/meanbean')
+mongoose.connect('mongodb://localhost/brewskerp')
 
 //log requests made to the app
 app.use(logger('dev'))
