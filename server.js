@@ -4,7 +4,9 @@ var express   = require('express'),
 	bodyParser	= require('body-parser'),
 	mongoose    = require('mongoose'),
 	port        = process.env.PORT || 3000,
+	db 					= process.env.MONGODB_URI || 'mongodb://localhost/brewskerp',
 	beanRoutes  = require('./config/bean_routes.js')
+
 
 //establish connection to mongo database
 mongoose.connect('mongodb://localhost/meanbean')
