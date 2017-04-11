@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="beansApp">
+	<head>
+		<meta charset="utf-8">
+		<title>MEANbean Coffee Shop</title>
+		<link rel="stylesheet" href="css/style.css">
+    <!-- load angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <!-- load ui-router -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/beans_controller.js"></script>
+	</head>
+
+	<body ng-controller="BeansController as beansCtrl">
+
+		<nav>
+      MEANbean coffee shop |
+			<a ui-sref-active="active" ui-sref="index">Home</a> |
+			<a ui-sref-active="active" ui-sref="new">New Bean</a>
+		</nav>
+
+    <hr>
+
+		<main ui-view>
+			<!-- angular ui.router will insert page template here: -->
+		</main>
+
+	</body>
+</html>
